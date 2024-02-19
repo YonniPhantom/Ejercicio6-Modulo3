@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Operaciones de Ordenamiento</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Operaciones de Ordenamiento</h1>
+        <div>
+            <label for="numbers">Arreglo de Números:</label>
+            <input type="text" id="numbers" placeholder="9,3,1,6,5,88,-1,2,7">
+            <button onclick="sortDescending()">Ordenar Descendente</button>
+        </div>
+        <div>
+            <label for="chars">Arreglo de Caracteres:</label>
+            <input type="text" id="chars" placeholder="b,h,w,e,a">
+            <button onclick="sortCharsByAscii()">Ordenar por ASCII</button>
+        </div>
+        <button onclick="sortStudentsByAverage()">Ordenar Alumnos por Promedio</button>
+        <div>
+            <label for="words">Arreglo de Palabras:</label>
+            <input type="text" id="words" placeholder="adios,hola,maximo,uno,despedida">
+            <button onclick="sortByWordLength()">Ordenar por Longitud de Palabra</button>
+        </div>
+        <div>
+            <label for="coordinates">Arreglo de Coordenadas:</label>
+            <input type="text" id="coordinates" placeholder="7,3|2,2|1,0|4,3">
+            <button onclick="sortByDistance()">Ordenar por Distancia</button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
